@@ -1,0 +1,7 @@
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelectorAll(".product button").forEach(function(button) {
+        button.addEventListener("click", function(event) {
+            alert("Bedankt voor je aankoop van " + event.target.parentElement.querySelector("h3").textContent + "!");
+        });
+    });
+});
